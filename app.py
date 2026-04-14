@@ -74,15 +74,12 @@ async def predict_image(file: UploadFile = File(...)):
         with torch.no_grad():
             outputs = model(input_tensor)
             
-            # Apply Softmax to convert raw logits into percentages
             probabilities = torch.nn.functional.softmax(outputs, dim=1)
             confidence, predicted_class = torch.max(probabilities, 1)
 
-        # Map the tensor index to your string labels
         class_names = ["FAKE", "REAL"]
         prediction_label = class_names[predicted_class.item()]
         
-        # Format the confidence as a clean percentage string
         confidence_pct = f"{confidence.item() * 100:.2f}%"
 
         return {
@@ -95,5 +92,4 @@ async def predict_image(file: UploadFile = File(...)):
         raise HTTPException(status_code=500, detail=f"Error processing image: {str(e)}")
 
 if __name__ == "__main__":
-    # Start the server on port 8000
     uvicorn.run(app, host="0.0.0.0", port=8000)
