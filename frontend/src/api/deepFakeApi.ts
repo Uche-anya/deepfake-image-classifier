@@ -5,7 +5,7 @@ export interface PredictionResponse {
     error?: string;
 }
 
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://cifakekingsley-cifake-deepfake.hf.space";
 
 export const analyzeImage = async (imageFile: File): Promise<PredictionResponse> => {
     const formData = new FormData();
