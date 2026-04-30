@@ -433,13 +433,7 @@ The `numpy<2.0.0` constraint is included to avoid compatibility issues with some
 
 ## Dataset
 
-The model was trained using the CIFAKE dataset:
-
-**CIFAKE: Real and AI-Generated Synthetic Images**
-
-The dataset contains real images from CIFAR-10 and synthetic images generated to resemble CIFAR-style images.
-
----
+The model was trained using the [CIFAKE: Real and AI-Generated Synthetic Images dataset](https://www.kaggle.com/datasets/birdy654/cifake-real-and-ai-generated-synthetic-images), which contains 120,000 images: 60,000 real images collected from CIFAR-10 and 60,000 AI-generated synthetic images.
 
 ---
 
