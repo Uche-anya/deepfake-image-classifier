@@ -8,15 +8,9 @@ The project combines a lightweight **FastAPI backend** for model inference with 
 
 ## Live Demo
 
-- **Frontend:** [Insert your Vercel URL here]
-- **Backend API:** [Insert your Hugging Face Spaces URL here]
+- **Frontend:** https://deepfake-image-classifier.vercel.app
+- **Backend API:** https://cifakekingsley-cifake-deepfake.hf.space/
 
-Example:
-
-```text
-Frontend: https://deepfake-image-classifier.vercel.app
-Backend:  https://your-username-cifake-api.hf.space
-```
 
 ---
 
